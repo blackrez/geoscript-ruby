@@ -18,7 +18,7 @@ describe Point do
   end
 
   describe "#json" do
-    it "return a wkb from a Point instance" do
+    it "return a geojson from a Point instance" do
       p = Point.new -111.0, 45.7
       expect(p.to_json).to eq("{\"type\":\"Point\",\"coordinates\":[-111,45.7]}")
     end
