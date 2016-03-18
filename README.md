@@ -2,7 +2,13 @@ geoscript-ruby
 
 GeoScript for JRuby
 
-If in development, run `mvn install` to get GeoTools dependencies
+Install with bundle :
+
+```
+$ bundle install
+```
+
+Then launch
 
 ```ruby
 # installed gem
@@ -16,7 +22,7 @@ If in development, run `mvn install` to get GeoTools dependencies
 require 'geoscript'
 # => true
 include GeoScript::Geom
-# => Object
+# => Objectu
 
 p = Point.new -111.0, 45.7
 # => #<GeoScript::Geom::Point:0x636c4fcb>
@@ -33,3 +39,5 @@ poly = p2.buffer 100
 poly.get_area
 # => 31214.451522458345
 ```
+
+An update with the latest version of geotools will be proposed soon, stay tuned.

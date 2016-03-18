@@ -18,7 +18,6 @@ module GeoScript
             c = Coordinate.new coords[0], coords[1]
             c.z = coords[2] if coords[2]
           end
-          
           p = GEOM_FACTORY.create_point c
         end
         super p.coordinate_sequence, GEOM_FACTORY
