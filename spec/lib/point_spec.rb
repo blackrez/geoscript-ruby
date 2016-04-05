@@ -68,12 +68,4 @@ describe Point do
       end
     end
   end
-
-    # Return an integer or projection instance?
-    # describe "#set projection" do
-    #   it "return a SRID" do
-    #     p = Point.new 0, 0
-    #     srid =
-    #   end
-
-  end
+end
